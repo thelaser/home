@@ -9,3 +9,4 @@ https://github.com/tmux-plugins/tmux-prefix-highlight
 https://github.com/tmux-plugins/tmux-cpu  
 https://github.com/jackharrisonsherlock/common  
 https://github.com/0xAF/tmux-public-ip  
+https://github.com/amix/vimrc  
