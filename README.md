@@ -3,8 +3,8 @@ These are the configurations for tmux and zsh (and others), that I'm using in my
 
 Before installing make sure you ran the following (install tmux zsh vim git and oh-my-zsh from source):
 
-`$ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install tmux vim zsh git`
-`$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+`$ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install tmux vim zsh git`  
+`$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`  
 
 It contains the config for some plugins as well. Here is a list with the different GitHubs from where I get all the stuff:
 
