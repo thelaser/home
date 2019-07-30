@@ -19,3 +19,4 @@ https://github.com/robbyrussell/oh-my-zsh
 https://github.com/ConradIrwin/vim-bracketed-paste  
 https://github.com/vim-scripts/vim-auto-save  
 https://github.com/tmux-plugins/tmux-continuum
+https://github.com/tmux-plugins/tmux-resurrect
