@@ -1,10 +1,33 @@
 # home
+
+## Description
+
 These are the configurations for tmux and zsh (and others), that I'm using in my /home directories. This repo is for easy setup.
+
+## Prerequisites
 
 Before installing make sure you ran the following (install tmux zsh vim git and oh-my-zsh from source):
 
-`$ sudo apt-get update && sudo apt-get upgrade && sudo apt-get install tmux vim zsh git`  
+`$ sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install tmux vim zsh git dnsutils -y`  
+
 `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`  
+
+## Cloud SDK
+
+I use the Cloud SDK, and like to set it up the following way:
+
+1. First [download the latest installer](https://cloud.google.com/sdk/docs/) for the SDK in the folder you want to install it (as of 31/07/19 it is 256):
+```  
+cd /usr/src
+wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-256.0.0-linux-x86_64.tar.gz`
+tar xvf google-cloud-sdk-256.0.0-linux-x86_64.tar.gz
+cd google-cloud-sdk-256.0.0-linux-x86_64
+./install.sh
+
+```
+2. Follow the installation script, and be sure the .zshrc autocompletion lines are added.
+
+## Plugins used
 
 It contains the config for some plugins as well. Here is a list with the different GitHubs from where I get all the stuff:
 

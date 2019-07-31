@@ -99,10 +99,17 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-# ------ init comms ----------------
+# ------ my configs ----------------
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 
 alias tmuxk='tmux kill-server'
+alias pubip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/src/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/src/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/src/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/src/google-cloud-sdk/completion.zsh.inc'; fi
