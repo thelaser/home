@@ -12,6 +12,8 @@ Before installing make sure you ran the following (install tmux zsh vim git and 
 
 `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`  
 
+If you want the latest tmux, you can always [make it from source](https://github.com/tmux/tmux)
+
 ## Cloud SDK
 
 I use the Cloud SDK, and like to set it up the following way:
@@ -41,5 +43,6 @@ https://github.com/amix/vimrc
 https://github.com/robbyrussell/oh-my-zsh  
 https://github.com/ConradIrwin/vim-bracketed-paste  
 https://github.com/vim-scripts/vim-auto-save  
-https://github.com/tmux-plugins/tmux-continuum
-https://github.com/tmux-plugins/tmux-resurrect
+https://github.com/tmux-plugins/tmux-continuum  
+https://github.com/tmux-plugins/tmux-resurrect  
+https://github.com/tmux-plugins/tmux-sensible (only took config)  
