@@ -113,3 +113,28 @@ if [ -f '/usr/src/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/src/google-clou
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/src/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/src/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Load mapfile module
+zmodload zsh/mapfile
+
+# Docker alias
+alias d=docker
+alias de='docker exec -it'
+alias dr='docker run -it'
+alias dc='docker-compose'
+
+# Docker cleanup func
+
+dcleanup(){
+  docker rm `docker ps -aq 2>/dev/null` 2>/dev/null  
+  echo "Removed all containers not running"
+  docker rm `docker ps --filter status=exited -q 2>/dev/null` 2>/dev/null
+  echo "Removed all containers in exited status"
+  docker rm `docker images --filter dangling=true -q 2>/dev/null` 2>/dev/null
+  echo "Removed all dangling images (not being used by any container)"
+}
+
+dkillrun() {
+ docker kill `docker ps -q`
+}
+
