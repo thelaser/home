@@ -46,3 +46,4 @@ https://github.com/vim-scripts/vim-auto-save
 https://github.com/tmux-plugins/tmux-continuum  
 https://github.com/tmux-plugins/tmux-resurrect  
 https://github.com/tmux-plugins/tmux-sensible (only took config)  
+https://github.com/LucHermitte/mu-template/
